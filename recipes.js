@@ -42,12 +42,12 @@ Recipe.create({
     return Recipe.insertMany(data);
   })
   .then((theRecipes) => theRecipes.forEach((aRecipe, index) => {
-      console.log(`${index} ${aRecipe.title}`);
-    }))
+    console.log(`${index} ${aRecipe.title}`);
+  }))
   .then((Recipes) => Recipes.updateOne(
-      { title: "Rigatoni alla Genovese" },
-      { duration: 100 }
-    ))
+    { title: 'Rigatoni alla Genovese' },
+    { duration: 100 },
+  ))
   .then((rigatoniDuration) => {
     console.log(rigatoniDuration);
   })
