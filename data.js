@@ -48,6 +48,6 @@ module.exports =
         dishType: ['Dish'],
         image: 'https://images.media-allrecipes.com/userphotos/720x405/815964.jpg',
         duration: 30,
-        creator: 'Chef Jennifer'
-      }
+        creator: 'Chef Jennifer',
+      },
     ];
